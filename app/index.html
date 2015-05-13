@@ -21,40 +21,37 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            <a class="navbar-brand" href="#/">nuvisoInitial</a>
+    <nav class="navbar navbar-color">
+      <div class="container-header">
+        <div class="navbar-header">
+          <img width="320" height="70" src="images/logosdn.png"></img>
+        </div>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group search-box">
+            <span class="glyphicon glyphicon-search">
+              <input type="text"  placeholder="search"></span>
           </div>
-
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
-
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
-            </ul>
-          </div>
+        </form>
+        <div class="glyphy-icons">
+          <span class="glyphicon glyphicon-user"></span>
+          <span class="glyphicon glyphicon-lock glyphy-pads"></span>
         </div>
       </div>
-    </div>
+    </nav>
+
+    <div class="offset-lg"></div>
 
     <div class="container">
-    <div ng-view=""></div>
+      <div ng-view=""></div>
     </div>
 
     <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+      <div class="navbar-color">
+        <div class="container-header">
+          <div class="Footer col-sm-4">Footer</div>
+          <div class="ContactInfo col-sm-4">Contact Information</div>
+          <div class="Disclaim col-sm-4">Disclaimer</div>
       </div>
     </div>
 

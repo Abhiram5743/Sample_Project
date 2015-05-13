@@ -17,10 +17,45 @@ body {
   padding-right: 15px;
 }
 
+.navbar-color{
+  background-color: #0072b8;
+  position: relative;
+  min-height: 85px;
+  margin-bottom: 0px;
+  border: 1px solid;
+}
+
+.navbar-font{
+  
+
+}
+
+.search-box{
+  background: #FFFFFF;
+  width: 756px;
+  padding: 12px;
+  border: 1px solid;
+  float: center;
+  border-radius: 20px;
+}
+.search-control{
+  width: 756px;
+  padding: 12px;
+  border: 1px solid;
+  float: center;
+  border-radius: 20px;
+}
+
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
+}
+
+.container-header{
+  width: 1400px;
+  margin:auto;
+  padding-top: 8px;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -33,7 +68,7 @@ body {
 /* Custom page footer */
 .footer {
   padding-top: 19px;
-  color: #777;
+  color: #FFFFFF;
   border-top: 1px solid #e5e5e5;
 }
 
@@ -57,6 +92,16 @@ body {
 }
 .marketing p + h4 {
   margin-top: 28px;
+}
+
+.glyphy-icons{
+  font-size: large;
+  color: #FFFFFF;
+  padding : 20px;
+}
+
+.glyphy-pads{
+  padding-left:20px;
 }
 
 /* Responsive: Portrait tablets and up */
