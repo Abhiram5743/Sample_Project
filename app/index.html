@@ -24,30 +24,32 @@
     <!-- This is the header part of the page -->
     <nav class="navbar navbar-color">
       <div class="container-header">
-        <div class="navbar-header">
-          <img width="320" height="70" src="images/logosdn.png"></img>
+        <div class="navbar-header col-md-6">
+          <img width="320" height="60" src="images/logosdn.png"></img>
         </div>
-        <form class="navbar-form navbar-left" role="search">
-          <div class="form-group search-box">
-            <span class="glyphicon glyphicon-search">
-              <input type="text"  placeholder="search"></span>
+        <div class="col-md-3">
+          <form class="form-search">
+            <input type="text" class="input-medium search-query" ng-model="clicked" placeholder="search"></span>
+          </form>
+        </div>  
+        <div class="glyphy-icons col-md-3">
+          <div class="col-md-2">
+            <span class="glyphicon glyphicon-search" ng-click="show"></span>
           </div>
-        </form>
-        <div class="glyphy-icons">
-          <span class="glyphicon glyphicon-search" ng-click="customSearch()"></span>
-          <span class="glyphicon glyphicon-user glyphy-pads" ng-click="signin()"></span>
-          <span class="glyphicon glyphicon-lock glyphy-pads"></span>
+          <div class="col-md-2"><span class="glyphicon glyphicon-user" ng-click="signin()"><span class="caret"></span></span></div>
+          <div class="col-md-2"><span class="glyphicon glyphicon-lock"></span></div>
         </div>
       </div>
     </nav>
 
     <div class="offset-lg"></div>
+    <p></p>
     <!-- This is the body of the page -->
-    <div class="col-sm-12">
-      <div class="container-header">
-        <div class="row" ng-view=""></div>
-      </div>
+   <div class="container-fluid col-md-4">
+    <div class="row-fluid">
+      <div class="span2" ng-view=""></div>
     </div>
+   </div>
 
     <!-- This is the footer part of the page -->
     <div class="col-sm-12">
