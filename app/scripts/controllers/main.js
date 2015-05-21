@@ -15,6 +15,8 @@ angular.module('nuvisoInitialApp')
       'Karma'
     ];
 
+
+$scope.sampleJson
     $scope.showModal=false;
 
     $scope.signin = function() {

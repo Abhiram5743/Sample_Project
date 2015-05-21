@@ -36,7 +36,14 @@
           <div class="col-md-2">
             <span class="glyphicon glyphicon-search" ng-click="show"></span>
           </div>
-          <div class="col-md-2"><span class="glyphicon glyphicon-user" ng-click="signin()"><span class="caret"></span></span></div>
+          <div class="col-md-2"><span class="glyphicon glyphicon-user" ng-click="signin()"><span class="caret"></span></span>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+            </ul>
+          </div>
           <div class="col-md-2"><span class="glyphicon glyphicon-lock"></span></div>
         </div>
       </div>
@@ -45,9 +52,9 @@
     <div class="offset-lg"></div>
     <p></p>
     <!-- This is the body of the page -->
-   <div class="container-fluid col-md-4">
-    <div class="row-fluid">
-      <div class="span2" ng-view=""></div>
+   <div class="container-fluid col-md-12">
+    <div class="">
+      <div class="span7" ng-view=""></div>
     </div>
    </div>
 
@@ -95,6 +102,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/example.js"></script>
         <!-- endbuild -->
 </body>
 </html>
