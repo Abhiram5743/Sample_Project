@@ -1,5 +1,5 @@
-angular.module('ui.bootstrap.demo', ['ui.bootstrap']);
-angular.module('ui.bootstrap.demo').controller('CarouselDemoCtrl', function ($scope) {
+//angular.module('nuvisoInitialApp', ['ui.bootstrap']);
+angular.module('nuvisoInitialApp').controller('CarouselDemoCtrl', function ($scope) {
   $scope.myInterval = 5000;
   var slides = $scope.slides = [];
   $scope.addSlide = function() {
